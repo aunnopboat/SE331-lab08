@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: firstDataSource, remote
+    active: firstDataSource,remote
 server:
   baseUrl: http://localhost:3000/
   imageUrl: images/
