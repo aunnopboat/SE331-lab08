@@ -25,7 +25,7 @@ public class StudentDBImpl implements StudentDao {
 
     @Override
     public Student findById(long id) {
-        return null;
+        return studentRepository.findById(id);
     }
 
     @Override
