@@ -43,6 +43,7 @@ public class StudentServiceImpl implements StudentService {
     @Override
     @Transactional
     public Student findById(long id) {
+
         Student student = studentDao.findById(id);
         Hibernate.initialize(student.getEnrolledCourse());
         return student;
